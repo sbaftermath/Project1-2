@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>New Superhuman</title>
+</head>
+
+<style type="text/css">
+	form {border: 1px solid black;
+	margin: 20px;
+	width: 400px;}
+</style>
+
+<body>
+    <form name="create_superhuman" action="/Project1/CreateServlet" method="POST" style="background-color:coral;">
+        <div class="input-group">
+            <label for="superhuman_name">Name:</label>
+            <input type="text" name="superhuman_name" id="superhuman_name" placeholder="Superhuman_Name"/>
+        </div>
+        <div class="input-group">
+            <label for="superhuman_powers">Power:</label>
+            <input type="text" name="superhuman_powers" id="superhuman_powers" placeholder="Superhuman_Powers"/>
+        </div>
+            <div class="input-group">
+            <label for="superhuman_weakness">Weakness:</label>
+        <input type="text" name="superhuman_weakness" id="superhuman_weakness" placeholder="Superhuman_Weakness"/>
+        </div>
+        <div class="radio-group">
+                <input type="radio" name="superhuman_alignment" id="hero" value="hero" checked/>
+                <label for="hero">Hero</label>
+                <input type="radio" name="superhuman_alignment" id="villain" value="villain"/>
+                <label for="villain">Villain</label>
+                <input type="radio" name="superhuman_alignment" id="vigilante" value="vigilante"/>
+                <label for="vigilante">Vigilante</label>
+        </div>
+        <input type="Submit" class="like" value="Create Superhuman">
+    
+    
+    </form>
+    
+        <form name="update_superhuman" action="/Project1/UpdateServlet" method="POST" style="background-color:beige;">
+        <div class="input-group">
+            <label for="superhuman_name">Name:</label>
+            <input type="text" name="superhuman_name" id="superhuman_name" placeholder="Superhuman_Name"/>
+        </div>
+        <div class="input-group">
+            <label for="superhuman_powers">Power:</label>
+            <input type="text" name="superhuman_powers" id="superhuman_powers" placeholder="Superhuman_Powers"/>
+        </div>
+            <div class="input-group">
+            <label for="superhuman_weakness">Weakness:</label>
+        <input type="text" name="superhuman_weakness" id="superhuman_weakness" placeholder="Superhuman_Weakness"/>
+        </div>
+        <div class="radio-group">
+                <input type="radio" name="superhuman_alignment" id="hero" value="hero" checked/>
+                <label for="hero">Hero</label>
+                <input type="radio" name="superhuman_alignment" id="villain" value="villain"/>
+                <label for="villain">Villain</label>
+                <input type="radio" name="superhuman_alignment" id="vigilante" value="vigilante"/>
+                <label for="vigilante">Vigilante</label>
+        </div>
+        <input type="Submit" class="like" value="Update Superhuman">
+    
+    
+    </form>
+    
+        <form name="delete_superhuman" action="/Project1/DeleteServlet" method="POST" style="background-color:#92a8d1;">
+        <div class="input-group">
+            <label for="superhuman_name">Name:</label>
+            <input type="text" name="superhuman_name" id="superhuman_name" placeholder="Superhuman_Name"/>
+        </div>
+        <input type="Submit" class="like" value="Delete Superhuman">
+    
+    
+    </form>
+    
+        <form name="view_superhumans" action="/Project1/ViewServlet" method="POST" style="background-color:rgb(201, 76, 76);">
+        <input type="Submit" class="like" value="View Superhumans">
+    </form>
+</body>
+
+</html>
